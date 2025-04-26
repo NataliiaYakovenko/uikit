@@ -78,6 +78,36 @@ function Icons({ width, height, fill, name }) {
         />
       </svg>
     );
+  } else if (name === "checkbox-not-chosen") {
+    content = (
+      <svg
+        width={width || 18}
+        height={height || 18}
+        viewBox="0 0 30 30"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M26.6667 3.33333V26.6667H3.33333V3.33333H26.6667ZM26.6667 0H3.33333C1.5 0 0 1.5 0 3.33333V26.6667C0 28.5 1.5 30 3.33333 30H26.6667C28.5 30 30 28.5 30 26.6667V3.33333C30 1.5 28.5 0 26.6667 0Z"
+          fill={fill || "#004B93"}
+        />
+      </svg>
+    );
+  } else if (name === "checkbox-chosen") {
+    content = (
+      <svg
+        width={width || 18}
+        height={height || 18}
+        viewBox="0 0 30 30"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M26.6667 0H3.33333C1.48333 0 0 1.5 0 3.33333V26.6667C0 28.5 1.48333 30 3.33333 30H26.6667C28.5167 30 30 28.5 30 26.6667V3.33333C30 1.5 28.5167 0 26.6667 0ZM11.6667 23.3333L3.33333 15L5.68333 12.65L11.6667 18.6167L24.3167 5.96667L26.6667 8.33333L11.6667 23.3333Z"
+          fill={fill || "#004B93"}
+        />
+      </svg>
+    );
   }
 
   return <div>{content}</div>;
